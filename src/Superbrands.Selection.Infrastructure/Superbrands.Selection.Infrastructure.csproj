@@ -1,0 +1,47 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netstandard2.1</TargetFramework>
+        <LangVersion>default</LangVersion>
+        <AssemblyName>Superbrands.Selection.Infrastructure</AssemblyName>
+        <RootNamespace>Superbrands.Selection.Infrastructure</RootNamespace>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\Superbrands.Selection.Domain\Superbrands.Selection.Domain.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="EPPlus" Version="5.6.4" />
+        <PackageReference Include="DeepCloner" Version="0.10.2" />
+        <PackageReference Include="Mapster" Version="7.2.0" />
+        <PackageReference Include="MediatR" Version="9.0.0" />
+        <PackageReference Include="Microsoft.CodeAnalysis.FxCopAnalyzers" Version="3.3.2">
+          <PrivateAssets>all</PrivateAssets>
+          <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+        </PackageReference>
+        <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.10" />
+        <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="5.0.6">
+          <PrivateAssets>all</PrivateAssets>
+          <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+        </PackageReference>
+        <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="5.0.0" />
+        <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="5.0.0" />
+        <PackageReference Include="Npgsql" Version="5.0.5" />
+        <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="5.0.6" />
+        <PackageReference Include="Superbrands.Libs.DDD.EfCore" Version="1.6.6" />
+        <PackageReference Include="Superbrands.Libs.Bus.Contracts.CSharp" Version="1.7.24" />
+        <PackageReference Include="Superbrands.Libs.RestClients.PIM" Version="2.1.2" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <None Update="../.editorconfig">
+            <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+        </None>
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="Migrations\" />
+    </ItemGroup>
+
+</Project>

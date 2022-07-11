@@ -1,0 +1,29 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <LangVersion>latest</LangVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Mapster" Version="7.2.0" />
+    <PackageReference Include="MediatR" Version="9.0.0" />
+    <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="9.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.2.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="5.0.0" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="5.0.0" />
+    <PackageReference Include="Superbrands.Libs.Bus.Client" Version="1.3.3" />
+    <PackageReference Include="Superbrands.Libs.Bus.Contracts.CSharp" Version="1.7.24" />
+    <PackageReference Include="Superbrands.Libs.RestClients.PartnerInfrastructure" Version="1.2.10" />
+    <PackageReference Include="Superbrands.Libs.RestClients.Seasons" Version="1.3.4" />
+    <PackageReference Include="Superbrands.Libs.RestClients.Segments" Version="1.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Superbrands.Selection.Application\Superbrands.Selection.Application.csproj" />
+    <ProjectReference Include="..\Superbrands.Selection.Domain\Superbrands.Selection.Domain.csproj" />
+    <ProjectReference Include="..\Superbrands.Selection.Infrastructure\Superbrands.Selection.Infrastructure.csproj" />
+  </ItemGroup>
+
+
+</Project>

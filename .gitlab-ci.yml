@@ -1,0 +1,10 @@
+include: 
+  - project: "libs/gitlab"
+    ref: "master"
+    file: "_domain.service.yml"
+ 
+variables:
+    absoluteTestDir: "${CI_PROJECT_DIR}/tests/Superbrands.Selection.UnitTests"
+    Deploy_Bind_To_Port: 5001
+    DockerAppNameLowercase: "selections"
+    restClientDir: "${absoluteSrcDir}/Superbrands.Selection.WebApi.Client"
